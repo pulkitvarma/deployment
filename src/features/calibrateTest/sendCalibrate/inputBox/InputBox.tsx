@@ -118,10 +118,15 @@ const InputBox = (props: IProps) => {
         }
     }
 
-    const checkEmailValidity = () => {
+    const checkEmailValidity = (event) => {
+        const emailValue = event.target.value;
+        setState({
+            ...state,
+            value: emailValue
+        });
         if (state.from === 'INPUT') {
             const regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            const email = state.value;
+            const email = emailValue;
             if (email !== '') {
                 const reduxEmail = props.calibrateTest.emails;
                 const indexOfFind = reduxEmail.findIndex((element, index) => {
@@ -134,6 +139,7 @@ const InputBox = (props: IProps) => {
                     props.setEmails(email, props.index);
                     return setState({
                         ...state,
+                        value: emailValue,
                         error: 'This email address is invalid!',
                         removeButton: false,
                         from: 'INPUT'
@@ -143,6 +149,7 @@ const InputBox = (props: IProps) => {
                     props.setEmails(email, props.index);
                     return setState({
                         ...state,
+                        value: emailValue,
                         error: 'This email address is already taken!',
                         removeButton: false,
                         from: 'INPUT'
@@ -152,6 +159,7 @@ const InputBox = (props: IProps) => {
                     props.setEmails(email, props.index);
                     return setState({
                         ...state,
+                        value: emailValue,
                         error: '',
                         removeButton: false,
                         from: 'INPUT'
@@ -160,6 +168,7 @@ const InputBox = (props: IProps) => {
                 else {
                     return setState({
                         ...state,
+                        value: emailValue,
                         removeButton: false,
                         from: 'INPUT'
                     })
@@ -168,6 +177,7 @@ const InputBox = (props: IProps) => {
             else {
                 return setState({
                     ...state,
+                    value: emailValue,
                     removeButton: false,
                     from: 'INPUT'
                 });
@@ -176,6 +186,7 @@ const InputBox = (props: IProps) => {
         else {
             return setState({
                 ...state,
+                value: emailValue,
                 removeButton: false,
                 from: 'INPUT'
             });
@@ -219,9 +230,7 @@ const InputBox = (props: IProps) => {
     return (
         <React.Fragment>
             <div className="input__wrapper">
-                <input type="text" id={props.index.toString()} autoComplete="off" onBlur={async () => {
-                    checkEmailValidity();
-                }} onFocus={setRemoveButton} value={state.value} onChange={changedContent} placeholder="Enter Email Id" className="calibrate-email-input"></input>
+                <input type="text" id={props.index.toString()} autoComplete="off" onFocus={setRemoveButton} value={state.value} onChange={checkEmailValidity} placeholder="Enter Email Id" className="calibrate-email-input"></input>
                 {state.removeButton ?
                     <span className="remove" onMouseDown={async () => {
                         setState({

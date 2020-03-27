@@ -236,9 +236,9 @@ export default class Table extends Component {
         _: "expiryDate.display",
         sort: "expiryDate.timestamp"
       }
-      this.disabledInitiateDataTable(className, rowData, columns);
+      this.disableParticularColumnSorting([4,5], className, rowData, columns);
     }
-    else if(className === 'gat-calibrate-report' || className === 'bpt-calibrate-report'){
+    else if (className === 'gat-calibrate-report' || className === 'bpt-calibrate-report') {
       let columns = my_columns;
       columns[1].data = {
         _: "date.display",

@@ -16,10 +16,13 @@ interface IProps {
 
 const ErrorScreen = (props: any) => {
   useEffect(() => {
+    console.log(props)
     if (!props.location.state) {
       props.history.push({ pathname: '/error', state: '404' })
     }
-  }, [])
+  }, []);
+
+
   let errorDiv = <React.Fragment />;
   if (props.location.state === '500') {
     errorDiv = (

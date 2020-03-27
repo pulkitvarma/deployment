@@ -106,6 +106,7 @@ const SendCalibrate = (props: any) => {
             testType: props.calibrateTest.testType,
             emails: props.calibrateTest.emails
         }
+        console.log(body);
         props.onClose();
     }
 
