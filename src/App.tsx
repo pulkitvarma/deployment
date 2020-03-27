@@ -21,8 +21,7 @@ const App: React.FC = () => {
       <ScrollToTop />
       <Suspense fallback={<Loader />}>
         <Switch>
-          <HashRouter basename='/'>
-            <Route path='/application' component={NavPanel} />
+            <Route path='/deployment/application' component={NavPanel} />
             <Route exact path='/fp' component={ForgotPassword} />
             <Route path='/rp' component={ResetPassword} />
             <Route exact path='/error' component={ErrorScreen} />
@@ -33,7 +32,7 @@ const App: React.FC = () => {
             component={DetailedReport}
           /> */}
             <Route component={ErrorScreen} />
-          </HashRouter>
+
         </Switch>
       </Suspense>
     </Router>
