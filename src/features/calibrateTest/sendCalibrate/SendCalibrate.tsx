@@ -40,6 +40,19 @@ const SendCalibrate = (props: any) => {
         props.setEmails('', state.number);
     }, []);
 
+    useEffect(() => {
+        window.addEventListener('keypress', keyPressEventFunction);
+        return () => {
+            window.removeEventListener('keypress', keyPressEventFunction);
+        }
+    }, []);
+
+    const keyPressEventFunction = (e) => {
+        if (e.target.className === 'calibrate-email-input' && e.key === 'Enter') {
+            addInputBox();
+        }
+    }
+
     if (props.calibrateTest.emails) {
         const emails = props.calibrateTest.emails;
         const index = emails.findIndex(email => email === '')
@@ -111,6 +124,8 @@ const SendCalibrate = (props: any) => {
         console.log(body);
         props.onClose();
     }
+
+    console.log(state.inputNumber.length)
 
     if (state.toLoad) {
         return (

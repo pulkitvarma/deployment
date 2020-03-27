@@ -27,19 +27,6 @@ const InputBox = (props: IProps) => {
         boxNumber: props.boxNumber,
     });
 
-    useEffect(() => {
-        window.addEventListener('keypress', keyPressEventFunction);
-        return () => {
-            window.removeEventListener('keypress', keyPressEventFunction);
-        }
-    }, []);
-
-    const keyPressEventFunction = (e) => {
-        if (e.key === 'Enter') {
-            props.add();
-        }
-    }
-
     const findValueByIndex = (boxNumber) => {
         const emails = props.calibrateTest.emails;
         let value = '';
@@ -58,6 +45,7 @@ const InputBox = (props: IProps) => {
     }
 
     useEffect(() => {
+        document.getElementById(('calibrate-input ' + props.maxValue.toString())).focus();
         const emailValue = findValueByIndex(props.index);
         setState({
             ...state,
@@ -77,22 +65,7 @@ const InputBox = (props: IProps) => {
         }
     }, [props.maxValue]);
 
-    function docReady(fn) {
-        // see if DOM is already available
-        if (document.readyState === "complete" || document.readyState === "interactive") {
-            // call on next available tick
-            setTimeout(fn, 1);
-        } else {
-            document.addEventListener("DOMContentLoaded", fn);
-        }
-    }
-
     useEffect(() => {
-        docReady(function () {
-            // DOM is loaded and ready for manipulation here
-            document.getElementById((props.maxValue.toString())).focus();
-        });
-
         const emailValue = findValueByIndex(props.index);
         setState({
             ...state,
@@ -244,7 +217,7 @@ const InputBox = (props: IProps) => {
     return (
         <React.Fragment>
             <div className="input__wrapper">
-                <input type="text" id={props.index.toString()} autoComplete="off" onFocus={setRemoveButton} value={state.value} onChange={checkEmailValidity} placeholder="Enter Email Id" className="calibrate-email-input"></input>
+                <input type="text" id={'calibrate-input ' + props.index.toString()} autoComplete="off" onFocus={setRemoveButton} value={state.value} onChange={checkEmailValidity} placeholder="Enter Email Id" className="calibrate-email-input"></input>
                 {state.removeButton ?
                     <span className="remove" onMouseDown={async () => {
                         setState({

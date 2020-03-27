@@ -16,26 +16,28 @@ const DetailedReport = lazy(() => import("./features/reports/detailedReport/Deta
 
 const App: React.FC = () => {
 
+  console.log(process.env.PUBLIC_URL)
+
   return (
-    <Router>
+    <Router basename={`${process.env.PUBLIC_URL}/`}>
       <ScrollToTop />
       <Suspense fallback={<Loader />}>
         <Switch>
-            <Route path='/deployment/application' component={NavPanel} />
-            <Route exact path='/fp' component={ForgotPassword} />
-            <Route path='/rp' component={ResetPassword} />
-            <Route exact path='/error' component={ErrorScreen} />
-            <Route exact path='/receipt' component={Receipt} />
-            <Route exact path='/' component={Login} />
-            {/* <Route
+          <Route path='/application' component={NavPanel} />
+          <Route exact path='/fp' component={ForgotPassword} />
+          <Route path='/rp' component={ResetPassword} />
+          <Route exact path='/error' component={ErrorScreen} />
+          <Route exact path='/receipt' component={Receipt} />
+          <Route exact path='/' component={Login} />
+          {/* <Route
             path={`/reports/detailedReport`}
             component={DetailedReport}
           /> */}
-            <Route component={ErrorScreen} />
+          <Route component={ErrorScreen} />
 
         </Switch>
       </Suspense>
-    </Router>
+    </Router >
   );
 }
 
