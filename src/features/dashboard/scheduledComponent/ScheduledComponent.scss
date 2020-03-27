@@ -1,0 +1,29 @@
+.vertical-line {
+  background: linear-gradient(90deg, #ff9800 14.98%, #ffc107 99.91%);
+  width: 2px;
+  height: 18px;
+  position: absolute;
+  display: flex;
+  margin-top: 24px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.link {
+  border: none;
+  padding: 0px;
+  background-color: #f2f4fa;
+}
+.link:focus {
+  outline: none !important;
+}
+
+.resend-icon::before {
+  font-family: FontAwesome-Light, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  content: "\f1d8";
+  color: #ff9800;
+}
+.resend-icon:hover {
+  cursor: pointer;
+}

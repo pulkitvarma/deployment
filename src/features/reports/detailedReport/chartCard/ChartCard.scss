@@ -1,0 +1,40 @@
+.reportGraphWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  .graphTitle {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #666f94;
+  }
+  .pprWrapper {
+    padding: 22px;
+    .ppr {
+      //   margin-left: 3%;
+      height: 35vh;
+      width: 30vw;
+    }
+  }
+  .ppr-wrapping{
+    width: 49%;
+    border: 1px solid #e5e7ed;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .uprWrapper {
+    padding: 22px;
+    .upr {
+      //   position: relative;
+      height: 35vh;
+      width: 30vw;
+    }
+  }
+  .upr-wrapping{
+    width: 49%;
+    border: 1px solid #e5e7ed;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}

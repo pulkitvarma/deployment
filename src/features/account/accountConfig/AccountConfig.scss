@@ -1,0 +1,86 @@
+.popup-container {
+    height: 415px;
+    position: relative;
+}
+.eye::before {
+  font-family: FontAwesome, sans-serif;
+  font-style: normal;
+  content: "\f06e";
+  color: #7f87a6;
+}
+.eye-close::before {
+  font-family: FontAwesome, sans-serif;
+  font-style: normal;
+  content: "\f070";
+  color: #7f87a6;
+}
+
+.popup-wrap {
+  padding: 24px;
+  .content-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #323e70;
+  }
+}
+.popup-content {
+    padding: 0px !important;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(64, 75, 122, 0.08),
+      0px 0px 16px rgba(64, 75, 122, 0.08);
+    border-radius: 4px;
+  }
+.popup-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  height: 83px;
+  align-items: center;
+  .footerCancel {
+    margin-right: 18px;
+    background: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #ff9800;
+    border: 1px solid #ff9800;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 44px;
+    cursor: pointer;
+  }
+  .footerCancel.focus,
+  .footerCancel:focus {
+    outline: none;
+    background: none;
+  }
+  .footerPassword {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    padding: 12px 44px;
+    color: #ffffff;
+    background: radial-gradient(
+      49.96% 50.8% at 49.96% 49.86%,
+      #ff8800 0%,
+      #f08800 100%
+    );
+    box-shadow: 0px 0px 2px rgba(255, 152, 0, 0.25);
+    border-radius: 4px;
+    border: none;
+  }
+  .footerPassword.focus,
+  .footerPassword:focus {
+    outline: none;
+    border: none;
+  }
+}

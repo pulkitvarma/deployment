@@ -1,0 +1,62 @@
+.clear {
+  clear: both;
+}
+.carousel-Image {
+  width: 726px;
+  height: 415px;
+}
+.carousel-container {
+  width: 726px;
+  height: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.right-arrow {
+  width: 60px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+.right-arrow::after {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-size: 28px;
+  color: white;
+  line-height: 415px;
+  margin-left: 20px;
+}
+
+.left-arrow {
+  width: 60px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+.left-arrow::after {
+  content: "\f053";
+  font-family: FontAwesome;
+  font-size: 28px;
+  color: white;
+  line-height: 415px;
+  margin-left: 20px;
+}
+.carousel-image-holder {
+  height: 360px;
+  width: 4630px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+}

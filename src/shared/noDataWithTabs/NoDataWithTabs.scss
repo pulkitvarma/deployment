@@ -1,0 +1,41 @@
+.nodata {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #666f94;
+    margin-left: 12px;
+    margin-top: 24px;
+    margin-right: 16px;
+    .nodata0 {
+      width: 30%;
+    }
+    .nodata1 {
+      width: 15%;
+      // text-align: center;
+    }
+    .nodata2 {
+      width: 15%;
+      // text-align: center;
+    }
+    .nodata3 {
+      width: 15%;
+      // text-align: center;
+    }
+    .nodata4 {
+      width: 12.5%;
+      // text-align: center;
+    }
+    .nodata5 {
+      width: 12.5%;
+      text-align: right;
+    }
+  }
+  .nodataImgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+  }
+  

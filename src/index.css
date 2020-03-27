@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap");
+body {
+  margin: 0;
+  font-family: Ubuntu, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e5e5e5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: Ubuntu, sans-serif;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("./assets/fontAwesome.otf") format("opentype");
+}
+@font-face {
+  font-family: "FontAwesome-Light";
+  src: url("./assets/fontAwesome-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "FontAwesome-solid";
+  src: url("./assets/fontAwesome-Solid.otf") format("opentype");
+}

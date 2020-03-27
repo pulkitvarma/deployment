@@ -1,0 +1,105 @@
+.ReportWrapper {
+  background: #ffffff;
+  border-radius: 4px;
+
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  // padding: 17px;
+  position: relative;
+}
+.iconsize {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.downloadshare {
+  display: flex;
+}
+.paddings {
+  padding: 24px;
+}
+.headersFont {
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px 4px 0px 0px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #3c5185;
+}
+.highlight-fix {
+  margin-top: 20px !important;
+}
+.rChild1 {
+  background: #f2f4fa;
+  border-radius: 4px 4px 0px 0px;
+  // height: 80px;
+  padding: 0px 24px;
+  // align-items: center;
+  flex-direction: column;
+  display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  .ppt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    align-items: center;
+    color: #ff9800;
+  }
+  .clickable {
+    display: flex;
+  }
+  .clickable:hover {
+    cursor: pointer;
+  }
+  .lastUpdated {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #666f94;
+  }
+}
+.rChild2 {
+  display: flex;
+  border-radius: 4px;
+  .subLabel {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #666f94;
+  }
+
+
+}
+.child3child1 {
+  background: #f2f4fa;
+  border-radius: 4px 4px 0px 0px;
+  padding: 24px;
+}
+.rChild3 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
+}
+.rChild4 {
+  margin: 0px 24px 24px;
+  border: 1px solid #e5e7ed;
+  // box-shadow: 0px 0px 8px rgba(64, 75, 122, 0.04), 0px 0px 16px rgba(64, 75, 122, 0.04);
+  border-radius: 4px;
+}
+
+.content-edit {
+  background: none !important;
+  border: none !important;
+}
+.thumbs-wrapper {
+  display: none !important;
+}
+
+.ppz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

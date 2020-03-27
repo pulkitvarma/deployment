@@ -1,0 +1,143 @@
+.reportTest-wrapper {
+  position: relative;
+}
+.vertical-line {
+  background: linear-gradient(90deg, #ff9800 14.98%, #ffc107 99.91%);
+  width: 2px;
+  height: 18px;
+  position: absolute;
+  display: flex;
+  margin-top: 24px;
+  border-radius: 0px 3px 3px 0px;
+}
+.report-test {
+  width: 100%;
+  position: relative;
+}
+
+.total-button {
+  border-radius: 2px;
+  padding: 4% 0% 4%;
+  margin: 0 auto;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.dark-green {
+  background-color: #559352 !important;
+}
+
+.light-green {
+  background-color: #A6C44D !important;
+}
+
+.yellow {
+  background-color: #FFC849 !important;
+}
+
+.orange {
+  background-color: #F38A49 !important;
+}
+
+.red {
+  background-color: #E94941 !important;
+}
+
+.area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  padding: 24px;
+  background: #f2f4fa;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.flex-area1 {
+  height: fit-content;
+}
+
+.heading {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #3c5185;
+  margin-bottom: 7px;
+}
+
+.sub-heading {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #7f87a6;
+}
+
+.total-score {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.tooltip-icon {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.info-icon::before {
+  font-family: FontAwesome-Light, sans-serif;
+  font-style: normal;
+  content: '\f05a';
+  color: white;
+}
+
+.scheduled-desc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7f87a6;
+  margin: 0px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+
+.scheduled-tags {
+  width: 100%;
+  display: flex;
+  margin-top: 24px;
+
+  .compact-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E5E7ED;
+    border-radius: 28px;
+    padding: 2px 12px;
+    height: 26px;
+    margin-right: 12px;
+
+    .tagname {
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: #666F94;
+      margin-left: 8px;
+    }
+  }
+}

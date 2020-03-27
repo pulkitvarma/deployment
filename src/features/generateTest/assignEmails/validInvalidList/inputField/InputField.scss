@@ -1,0 +1,76 @@
+.valid-invalid-list {
+  position: relative;
+  width: 100%;
+}
+.valid-invalid-name {
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: flex-end;
+  color: #3c5185;
+}
+.invalid {
+  margin-right: 10%;
+}
+.valid-input-box {
+  width: 96%;
+  background-color: white;
+  border-top-style: outset;
+  border-left-style: outset;
+  line-height: 37px;
+  padding: 3px 10px;
+  color:#b2b7c9
+}
+
+.valid-invalid-buttons {
+  position: absolute;
+  top: 0px;
+}
+.valid-invalid-buttons.focus,
+.valid-invalid-buttons:focus {
+  outline: none !important;
+}
+.first {
+  position: absolute;
+  border: none;
+  outline: none;
+  background: none;
+  right: 50px;
+  top: 11px;
+}
+.first:hover,
+.second:hover {
+  cursor: pointer;
+}
+.first:focus {
+  outline: none;
+}
+.second {
+  position: absolute;
+  border: none;
+  outline: none;
+  background: none;
+  right: 15px;
+  top: 11px;
+}
+.second:focus {
+  outline: none;
+}
+.chevron-edit:before {
+  font-family: FontAwesome-Light, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  content: "\f044";
+  color: #ff9800;
+}
+.chevron-delete:before {
+  font-family: FontAwesome-Light, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  content: "\f05c";
+  color: #ff9800;
+}
+

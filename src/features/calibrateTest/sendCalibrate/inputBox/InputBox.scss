@@ -1,0 +1,44 @@
+.input__wrapper {
+    position: relative;
+    display: block;
+
+    .calibrate-email-input {
+        margin-top: 24px;
+        width: 650px;
+        height: 53px;
+        background: #FFFFFF;
+        border: 0.5px solid #999FB7;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 16px;
+        display: block;
+    }
+
+    .error {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        color: #F44336;
+        position: absolute;
+        bottom: -20px;
+        margin-left: 16px;
+    }
+
+    .delete, .remove {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 10px;
+        position: absolute;
+        top: 0px;
+        left: 590px;
+        cursor: pointer;
+    }
+}
+
+input:focus,
+input:active {
+    border: none;
+    outline-color: #ff9800;
+}

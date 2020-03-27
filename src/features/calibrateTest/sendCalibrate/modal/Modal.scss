@@ -1,0 +1,44 @@
+.modal-content {
+  background-color: #fefefe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #888;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(64, 75, 122, 0.08),
+    0px 0px 16px rgba(64, 75, 122, 0.08);
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 19px;
+  }
+  .close::after {
+    content: "\f00d";
+    color: #b2b7c9;
+    font-family: FontAwesome-Light;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-heading {
+    background: #f2f4fa;
+    border-radius: 4px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    align-items: center;
+    color: #323e70;
+    padding-left: 24px;
+    padding: 24px;
+  }
+}

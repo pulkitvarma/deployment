@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap");
+@import "../../assets/color.scss";
+.container {
+  margin: 0px;
+  padding: 0px;
+  background: #e5e5e5;
+  height: 98vh;
+}
+.user-row {
+  margin: 0px;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+}
+@media only screen and (min-width: 1920px) {
+  .user-row {
+    padding-bottom: 7px;
+  }
+}
+.wrapper {
+  width: 98%;
+  overflow-y: hidden;
+}
+.row2 {
+  width: 100%;
+  margin-left: 24px;
+  padding-top: 24px;
+  overflow-y: auto;
+  background: #e5e5e5;
+}
+
+.show-notification {
+  right: 0px !important;
+}
+.notification__overlay {
+  background: rgba(127, 135, 166, 0.4);
+  position: fixed;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter:blur(3px);
+  width: 83.52%;
+  right: 0px;
+  z-index: 9;
+  height: 100%;
+  transition: 0.25s ease-in;
+}
+.hide-notification {
+  display: none;
+}
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 78px;
+  align-items: center;
+  background-color: #f2f4fa;
+  z-index: 11;
+  .header-logo::after {
+    position: fixed;
+    top: 30px;
+    left: 18%;
+    z-index: 999;
+    font-family: FontAwesome, sans-serif;
+    font-style: normal;
+    content: "\f002";
+    color: #666f94;
+    font-size: 18px;
+  }
+  .searchstyle {
+    position: fixed;
+    height: 78px;
+    margin-left: 16.5%;
+    width: 860px;
+    z-index: 99;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0px 62px;
+    background: #f2f4fa;
+    color: #3c5185;
+    transition: 0.2s ease-in;
+  }
+  // .searchstyle:focus .search__close-btn:before {
+  //   font-size: 26px;
+  // }
+  .search__close-btn {
+    width: 40px;
+    position: fixed;
+    right: 20px;
+    height: 40px;
+    border: none;
+    background: white;
+    z-index: 999;
+    display: none;
+    transition: 0.25s ease-in;
+  }
+  .search__close-btn:hover {
+    cursor: pointer;
+  }
+  .search__close-btn:before {
+    font-family: FontAwesome-Light, sans-serif;
+    font-style: normal;
+    content: "\f00d";
+    color: #b2b7c9;
+    font-size: 26px;
+    cursor: pointer;
+    transition: font-size 0.25s ease-in-out;
+  }
+  .header-logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 35px;
+    margin-left: 30px;
+  }
+  .search {
+    width: 60%;
+    position: fixed;
+    height: 78px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 18%;
+  }
+  .wrap-header {
+    display: flex;
+    justify-content: center;
+    height: 57px;
+    align-items: center;
+  }
+  .notification {
+    cursor: pointer;
+  }
+
+  .notificationBell:before {
+    font-family: FontAwesome-Light, sans-serif;
+    font-style: normal;
+    content: "\f0f3";
+    color: #666f94;
+  }
+  .profile {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 24px;
+    width: 150px;
+    height: 56px;
+    background-color: white;
+    border: 1px solid #b2b7c9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .companyimage {
+      width: 96px;
+      height: 80%;
+      background: #f2f4fa;
+      display: flex;
+      border-radius: 2px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .profile:hover {
+    cursor: pointer;
+  }
+}
+
+.show {
+  display: flex;
+}
+.wrap-contain {
+  display: flex;
+  // margin-top: 86px;
+  margin-top: 79px;
+  width: 100%;
+  height: 100%;
+  .sidebar {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-y: auto;
+    background: #323e70;
+    width: 20%;
+  }
+
+  .active {
+    background: #26305d;
+    font-weight: 500;
+    color: #ffffff;
+    // border-left: 4px solid #ff8800;
+    position: relative;
+    // transition: 0.15s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  }
+  .active::before {
+    font-style: normal;
+    content: "|";
+    font-weight: bold;
+    color: #ff8800;
+    font-size: 45px;
+    position: absolute;
+    left: -8px;
+    top: 13px;
+    border-radius: 0px 3px 3px;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .wrapper-top {
+    margin-top: 24px;
+  }
+  .copyright {
+    text-align: center;
+    height: 33px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    padding-top: 76px;
+    color: #7f87a6;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .container {
+    height: 89vh;
+  }
+}

@@ -1,0 +1,36 @@
+.countryDisplayWrapper {
+  display: flex;
+  align-items: center;
+  .downArrow {
+    font-size: 0.5em;
+    margin-left: 4px;
+  }
+}
+.countryDisplayWrapper:hover {
+  cursor: pointer;
+}
+.countryDisplay {
+  display: flex;
+  .flag {
+    height: 20px;
+    width: 20px;
+  }
+  .countryName {
+    font-size: 14px;
+    line-height: 150%;
+    color: #666f94;
+    margin-left: 4px;
+  }
+}
+.countryDisplay:hover{
+    cursor: pointer;
+}
+.allCountriesWrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid #e5e7ed;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 6px;
+}

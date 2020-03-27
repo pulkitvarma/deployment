@@ -1,0 +1,29 @@
+.tabHeadingsWrapper {
+  height: 42px;
+  position: relative;
+  display: flex;
+}
+.tabHeading {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  // border-bottom: 1px solid red;
+  padding: 12px 16px 12px 16px;
+  z-index: 9;
+  height: 43px;
+  position: relative;
+  transition: border-bottom ease-in 0.3s;
+}
+.tabHeading:hover{
+  cursor: pointer;
+}
+.tb {
+  display: none;
+}
+.hLine{
+  width: 100%;
+  border-bottom: 1px solid #E5E7ED;
+  position: absolute;
+  top: 42px;
+  z-index: 0;
+}

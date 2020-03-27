@@ -1,0 +1,82 @@
+.onBoard_wrapper {
+  background: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  position: relative;
+  .onBoard_content {
+    display: flex;
+    .card_column {
+      width: 60%;
+      padding: 24px 0px 8px 24px;
+      .card_Wrapper {
+        width: 100%;
+        border: 1px solid #cccfdb;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        display: flex;
+        .sno {
+          margin: 0px 24px 0px 24px;
+          color: #666f94;
+          font-size: 18px;
+          line-height: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .fa-check {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0px 17px 0px 24px;
+          .fa-check-regular:before {
+            font-family: FontAwesome-Light, sans-serif;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 20px;
+            content: "\f00c";
+            color: #26c24c;
+          }
+        }
+        .card_content_wrapper {
+          margin: 16px 0px 16px 0px;
+          width: 100%;
+          .card_title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+            color: #666f94;
+          }
+          .card_text {
+            margin-top: 6px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #7f87a6;
+          }
+        }
+        .fa-left {
+          margin: 0px 24px 0px 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .chevron-left:before {
+            font-family: FontAwesome-Light, sans-serif;
+            font-style: normal;
+            font-size: 14px;
+            content: "\f054";
+            color: #cccfdb;
+          }
+        }
+      }
+    }
+    .img_column {
+      width: 38%;
+      margin-left: 48px;
+      display: flex;
+      flex-direction: column-reverse;
+      .onBoard_img {
+        width: 100%;
+      }
+    }
+  }
+}

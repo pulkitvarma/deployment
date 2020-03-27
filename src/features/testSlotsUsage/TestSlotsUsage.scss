@@ -1,0 +1,151 @@
+.test-slots-wrapper {
+  width: 100%;
+  margin-bottom: 5%;
+
+  .test-slots-main {
+    position: relative;
+
+    .test-slots-main-area {
+      padding: 24px;
+      background: #f2f4fa;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .heading {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #3c5185;
+        margin-bottom: 8px;
+      }
+
+      .sub-heading {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #7f87a6;
+      }
+
+      .test-slots-main-description {
+        padding-top: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .test-slots-fact {
+          display: flex;
+          flex-direction: row;
+          width: 80%;
+          height: fit-content;
+
+          .facts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 5%;
+            width: 18%;
+            height: inherit;
+
+            .fact-heading {
+              font-style: normal;
+              font-size: 14px;
+              text-align: left;
+              color: #666f94;
+              margin-bottom: 10px;
+            }
+
+            .fact-score {
+              font-style: medium;
+              font-size: 18px;
+              text-align: left;
+              color: #3c5185;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .link {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 18px;
+          color: #ff9800;
+          border: none;
+          padding: 0px;
+          background-color: #f2f4fa;
+        }
+        .link:focus {
+          outline: none !important;
+        }
+      }
+    }
+  }
+}
+
+.chevron-left:before {
+  font-family: FontAwesome-Light, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  content: "\f054";
+  color: #f0b400;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.table-wrapper {
+  background: white;
+}
+
+.table-data {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+.dashed-horizontal-line {
+  border-style: dashed;
+  border-color: #cccfdb;
+  border-width: 1px;
+  margin-top: 48px;
+}
+
+.table-legend-data {
+  padding-top: 24px;
+  width: 95%;
+  display: flex;
+
+  .table-heading {
+    width: 17%;
+    font-style: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #666f94;
+  }
+
+  .table-colon {
+    width: 1%;
+    font-style: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #666f94;
+  }
+
+  .table-description {
+    font-style: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #3c5185;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .test-slots-wrapper {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}

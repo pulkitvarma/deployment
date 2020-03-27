@@ -1,0 +1,18 @@
+.photos {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    .imgs {
+      border: 1px solid #cccfdb;
+      box-sizing: border-box;
+      border-radius: 4px;
+      margin-bottom: 24px;
+      height: 200px;
+      width: 250px;
+    }
+    .imgs:hover {
+      cursor: pointer;
+    }
+  }

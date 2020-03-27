@@ -1,0 +1,275 @@
+.pickers {
+  margin-top: 24px;
+  display: flex;
+  margin-left: 24px;
+  position: relative;
+  flex-direction: row;
+}
+
+.dateCom {
+  width: 25%;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  display: flex;
+  height: 1px;
+  padding-top: 3px;
+  // margin-left: 38px;
+}
+
+.datePicker {
+  background: url(../../../assets/calender.png) no-repeat scroll;
+  background-position: 95% 43%;
+  padding-left: 5%;
+  color: #3C5185;
+  width: 300px;
+  border: 1px solid #e5e7ed;
+  border-radius: 4px;
+  height: 35px;
+  margin-top: 8px;
+}
+
+.react-datepicker-popper {
+  top: 6px !important;
+}
+
+.date {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  align-items: center;
+  text-transform: capitalize;
+  color: #666f94;
+}
+
+.time {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  align-items: center;
+  text-transform: capitalize;
+  color: #666f94;
+}
+
+.timePicker {
+  color: #3C5185;
+  width: 300px;
+  background: url(../../../assets/time.svg) no-repeat scroll;
+  background-position: 95% 43%;
+  border: 1px solid #e5e7ed;
+  border-radius: 4px;
+  height: 35px;
+  margin-top: 4%;
+  padding-left: 5%;
+}
+
+.timeCom {
+  margin-left: 100px;
+  width: 25%;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+input[type=radio] {
+  border: 0px;
+  width: 100%;
+  height: 2em;
+}
+
+.expiry {
+  margin-top: 12px;
+}
+
+.test-difficulty-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 24px;
+  margin-bottom: 4%;
+}
+
+.test-difficulty-level {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  margin-top: 1%;
+  justify-content: space-between;
+}
+
+.difficulty-level {
+  width: 25%;
+  background: #ffffff;
+  border: 1px solid #b2b7c9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.difficulty-level:hover {
+  cursor: pointer;
+}
+
+.difficulty-level-selected {
+  width: 25%;
+  background: #ffffff;
+  border: 1px solid #ff9800;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.difficulty-level-selected:hover {
+  cursor: pointer;
+}
+
+.difficulty-level-text {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #999fb7;
+  padding-left: 5%;
+}
+
+.difficulty-level-text-selected {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #ff9800;
+  padding-left: 5%;
+}
+
+.test-difficulty-heading {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #666f94;
+}
+
+.expiryInput {
+  background: url(../../../assets/days.png) no-repeat scroll;
+  background-position: 100%;
+  width: 224px;
+  border-radius: 4px;
+  height: 36px;
+  border: 1px solid #e5e7ed;
+  color: #3C5185;
+  padding: 0% 0% 0% 1% !important;
+}
+
+.expiryText {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #3c5185;
+  display: block;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+.tags {
+  margin-left: 24px;
+  margin-top: 48px;
+}
+
+.tagText {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #3c5185;
+  margin-bottom: 8px;
+}
+
+.expiry-wrapper {
+  padding-left: 24px;
+  padding-top: 1%;
+}
+
+.test-type-and-difficulty {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4%;
+  margin-bottom: 4%;
+
+  .test-type {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  .test-difficulty {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 10%;
+  }
+
+  .test-type-and-difficulty-heading {
+    margin-top: 2%;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    text-transform: capitalize;
+    color: #666f94;
+  }
+
+  .test-type-and-difficulty-description {
+    margin-top: 2%;
+    margin-bottom: 5%;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #7f87a6;
+  }
+
+  .test-type-and-difficulty-selection {
+    height: 36px;
+    margin-top: 1.5%;
+  }
+
+  .test-type-and-difficulty-dropdown {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid #e5e7ed;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+  }
+
+  select .dropdown-option {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    align-items: center;
+    color: #666f94;
+  }
+}

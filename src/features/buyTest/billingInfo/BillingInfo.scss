@@ -1,0 +1,129 @@
+.margin_left {
+  margin-left: 24px;
+}
+.addressWrapper {
+  border: 1px solid #e5e7ed;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 24px;
+  .adressMainContentWrapper {
+    padding: 24px;
+    .addressTitle {
+      font-weight: 500;
+      font-size: 16px;
+      color: #666f94;
+    }
+    .horizontalLineSolidBI {
+      border: 1px solid #cccfdb;
+      margin-top: 15px;
+    }
+    .addressFieldsSet {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+      .fieldType1 {
+        width: 49%;
+        height: 53px;
+        position: relative;
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+      .label {
+        // width: 100px;
+        position: absolute;
+        top: 17px;
+        left: 12px;
+        font-size: 13px;
+        color: #3c5185;
+        font-weight: 500;
+        transform-origin: 0 0;
+        transition: all 0.2s ease;
+      }
+      .border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: #07f;
+        transform: scaleX(0);
+        transform-origin: 0 0;
+        transition: all 0.15s ease;
+      }
+      .fieldType1 input {
+        -webkit-appearance: none;
+        width: 98%;
+        font-family: inherit;
+        padding: 12px 0;
+        height: 53px;
+        font-size: 14px;
+        font-weight: 500;
+        border: 1px solid #999fb7;
+        background: none;
+        border-radius: 4px;
+        color: #3c5185;
+        // padding: 14px;
+        padding-left: 10px;
+        transition: all 0.15s ease;
+        box-sizing: border-box;
+      }
+      .fieldType1 input:hover {
+        background: rgba(34, 50, 84, 0.03);
+      }
+      .fieldType1 input:not(:placeholder-shown) + span {
+        color: #5a667f;
+        transform: translateY(-15px) scale(0.75);
+      }
+      .fieldType1 input:focus {
+        background: none;
+        border: 1px solid #ff8800;
+        outline: none;
+      }
+      .fieldType1 input:focus + span {
+        color: #07f;
+        transform: translateY(-15px) scale(0.75);
+      }
+      .fieldType1 select {
+        -webkit-appearance: none;
+        width: 100%;
+        font-family: inherit;
+        padding: 12px 0;
+        height: 24px;
+        font-size: 14px;
+        font-weight: 500;
+        border: 1px solid #999fb7;
+        background: none;
+        border-radius: 4px;
+        color: #3c5185;
+        // padding: 14px;
+        margin: 0px;
+        padding-left: 10px;
+        transition: all 0.15s ease;
+      }
+      .fieldType1 select:hover {
+        background: rgba(34, 50, 84, 0.03);
+      }
+      .fieldType1 select:not(:placeholder-shown) + span {
+        color: #5a667f;
+        transform: translateY(-15px) scale(0.75);
+      }
+      .fieldType1 select:focus {
+        background: none;
+        border: 1px solid #ff8800;
+        outline: none;
+      }
+      .fieldType1 select:focus + span {
+        color: #07f;
+        transform: translateY(-15px) scale(0.75);
+      }
+    }
+  }
+}
+.error {
+  font-size: 12px;
+  color: red;
+  display: flex;
+  height: 1px;
+  padding-top: 3px;
+  margin-left: 15px;
+}

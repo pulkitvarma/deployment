@@ -1,0 +1,42 @@
+.circlesWrapper {
+  display: flex;
+  padding: 24px;
+  .outerDiv{
+    padding-right: 24px;
+    width:25%
+  }
+  .totalScoreWrapper {
+    border: 1px solid #e5e7ed;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 24px;
+  }
+  .sectionalScoreWrapper {
+    border: 1px solid #e5e7ed;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 24px;
+  }
+  .circlecss {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 4%;
+  }
+  .sectionTitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: #666f94;
+  }
+  .remark {
+    font-weight: 500;
+    font-size: 14px;
+    color: #666f94;
+  }
+  .circleMessageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+}

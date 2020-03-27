@@ -1,0 +1,90 @@
+.count {
+  font-weight: normal;
+  font-size: 14px;
+  color: #7f87a6;
+  padding: 16px 0px 16px 24px;
+  line-height: 150%;
+}
+.noResult {
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  color: #666f94;
+  padding: 20px 0px 20px 24px;
+}
+.contentSearch {
+  padding: 0px 0px 24px 0px;
+  overflow-y: auto;
+  height: 60vh;
+}
+.categoryHeading {
+  font-weight: 500;
+  font-size: 16px;
+  color: #3c5185;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  padding-left: 24px;
+}
+.showMore {
+  font-size: 12px;
+  line-height: 14px;
+  color: #ff9800;
+  margin-left: 24px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: fit-content;
+}
+.showMore:hover {
+  cursor: pointer;
+}
+.chevron-down:before {
+  font-family: FontAwesome-Light, sans-serif;
+  font-style: normal;
+  font-size: 8px;
+  content: "\f078";
+  color: #ff9800;
+}
+.searchedEmail {
+  font-weight: normal;
+  font-size: 16px;
+  color: #3c5185;
+}
+// .searchedEmail:hover {
+//   color: #ff9800;
+//   cursor: pointer;
+// }
+.otherInfoWrapper {
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  .type {
+    color: #666f94;
+    .property {
+      color: #7f87a6;
+    }
+    .value {
+      color: #666f94;
+    }
+  }
+  .dot {
+    height: 4px;
+    width: 4px;
+    margin-right: 12px;
+    margin-left: 12px;
+    background-color: #999fb7;
+    border-radius: 50%;
+  }
+}
+.emailNtype {
+  padding: 8px 0px 8px 24px;
+}
+.emailNtype:hover {
+  background: #f9fafc;
+  cursor: pointer;
+}
+.emailNtype:hover .searchedEmail {
+  color: #ff9800;
+  font-weight: 500;
+}

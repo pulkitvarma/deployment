@@ -1,0 +1,23 @@
+body {
+    overflow: hidden;
+  }
+  .container-fluid1 {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    overflow: hidden !important;
+    background-color: white;
+    // opacity: 0.5;
+    z-index: 100000;
+    left: 0;
+  }
+  .container11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation-delay: 3s;
+  }
+  

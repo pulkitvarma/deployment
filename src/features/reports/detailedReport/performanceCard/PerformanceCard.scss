@@ -1,0 +1,116 @@
+.boxing {
+  border:1px solid #E5E7ED;
+  border-radius: 4px;
+}
+
+.child3child2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  // flex-basis: 10%;
+  .rankWrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    .rankType {
+      font-weight: normal;
+      font-size: 14px;
+      color: #666f94;
+      margin-top: 6%;
+    }
+    .rankFraction {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: #3c5185;
+      margin-top: 8%;
+    }
+    .bigRank {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+    .rankBox {
+      width: 100px;
+      background: #666f94;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+    }
+    .plantRankWrapper {
+      display: flex;
+      border: 1px solid #e5e7ed;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 20px;
+    }
+  }
+  .accuracy-wrapping{
+    width: 33%;
+    border: 1px solid #e5e7ed;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 24px;
+  }
+  .accuracyWrapper, .ethicsWrapper {
+    padding: 20px 10px;
+  }
+  .ethics-wrapping {
+    width: 33%;
+    border: 1px solid #e5e7ed;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 24px;
+  }
+  .subReportTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #666f94;
+  }
+  .circleCss {
+    width: 150px;
+    height: 150px;
+    margin-top: 24px;
+  }
+  .performanceLegend {
+    margin-top: 14px;
+    margin-left: 12px;
+    border-left: 1px solid #e5e7ed;
+    padding: 24px 6px;
+  }
+  .performanceTextDis {
+    font-size: 14px;
+    line-height: 18px;
+    color: #666f94;
+    font-weight: normal;
+  }
+  .performanceTextDis:before{
+    content: '✓'; 
+    font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+    color: #E5E7ED ;
+    margin-right: 10px;
+  }
+  .performanceTextEn {
+    font-size: 14px;
+    line-height: 18px;
+    color: #3c5185;
+    font-weight: 500;
+  }
+  .performanceTextEn:before{
+    content: '✓'; 
+    font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+    color:#3C5185 ;
+  margin-right: 10px;
+  }
+}
