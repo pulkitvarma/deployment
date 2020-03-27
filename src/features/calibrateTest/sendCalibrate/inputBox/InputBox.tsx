@@ -13,7 +13,8 @@ interface IProps {
     },
     focus: boolean,
     maxValue: number,
-    boxNumber: number
+    boxNumber: number,
+    add: Function
 }
 
 const InputBox = (props: IProps) => {
@@ -25,6 +26,19 @@ const InputBox = (props: IProps) => {
         remove: false,
         boxNumber: props.boxNumber,
     });
+
+    useEffect(() => {
+        window.addEventListener('keypress', keyPressEventFunction);
+        return () => {
+            window.removeEventListener('keypress', keyPressEventFunction);
+        }
+    }, []);
+
+    const keyPressEventFunction = (e) => {
+        if (e.key === 'Enter') {
+            props.add();
+        }
+    }
 
     const findValueByIndex = (boxNumber) => {
         const emails = props.calibrateTest.emails;

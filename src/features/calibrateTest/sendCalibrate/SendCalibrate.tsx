@@ -71,17 +71,19 @@ const SendCalibrate = (props: any) => {
     }
 
     const addInputBox = () => {
-        const numberOfInput = state.inputNumber;
-        let number = ++state.number;
-        const boxIndex = state.boxIndex;
-        boxIndex.push(number);
-        props.setEmails('', state.number);
-        numberOfInput.push(number.toString())
-        setState({
-            ...state,
-            inputNumber: numberOfInput,
-            boxIndex: boxIndex
-        });
+        if (state.inputNumber.length <= 4) {
+            const numberOfInput = state.inputNumber;
+            let number = ++state.number;
+            const boxIndex = state.boxIndex;
+            boxIndex.push(number);
+            props.setEmails('', state.number);
+            numberOfInput.push(number.toString())
+            setState({
+                ...state,
+                inputNumber: numberOfInput,
+                boxIndex: boxIndex
+            });
+        }
     }
 
     const deleteInputBox = (id: number) => {
@@ -127,7 +129,7 @@ const SendCalibrate = (props: any) => {
                         <p className="heading">Assign Test Takers Email Id</p>
                         <p className="sub-heading">Enter e-mail ids to which you want the calibration test link to be sent. You can only send 5 Calibration tests.</p>
                         {state.boxIndex.map((element, index) => {
-                            return (<InputBox key={index} index={index} boxNumber={index} onClose={deleteInputBox} maxValue={state.inputNumber.length - 1} focus={state.inputNumber.length === 1 ? true : false} />);
+                            return (<InputBox key={index} index={index} add={addInputBox} boxNumber={index} onClose={deleteInputBox} maxValue={state.inputNumber.length - 1} focus={state.inputNumber.length === 1 ? true : false} />);
                         })
                         }
                         {state.inputNumber.length <= 4 ?

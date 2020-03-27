@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import './App.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 // import { useLocation } from "react-router-dom";
 import Loader from './shared/loader/Loader'
 import ScrollToTop from './scrollToTop'
@@ -20,17 +21,19 @@ const App: React.FC = () => {
       <ScrollToTop />
       <Suspense fallback={<Loader />}>
         <Switch>
-          <Route path='/application' component={NavPanel} />
-          <Route exact path='/fp' component={ForgotPassword} />
-          <Route path='/rp' component={ResetPassword} />
-          <Route exact path='/error' component={ErrorScreen} />
-          <Route exact path='/receipt' component={Receipt} />
-          <Route exact path='/' component={Login} />
-          {/* <Route
+          <HashRouter basename='/'>
+            <Route path='/application' component={NavPanel} />
+            <Route exact path='/fp' component={ForgotPassword} />
+            <Route path='/rp' component={ResetPassword} />
+            <Route exact path='/error' component={ErrorScreen} />
+            <Route exact path='/receipt' component={Receipt} />
+            <Route exact path='/' component={Login} />
+            {/* <Route
             path={`/reports/detailedReport`}
             component={DetailedReport}
           /> */}
-          <Route component={ErrorScreen} />
+            <Route component={ErrorScreen} />
+          </HashRouter>
         </Switch>
       </Suspense>
     </Router>
