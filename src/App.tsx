@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import './App.css';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch, BrowserRouter } from 'react-router-dom';
 import { HashRouter } from "react-router-dom";
 // import { useLocation } from "react-router-dom";
 import Loader from './shared/loader/Loader'
@@ -19,23 +19,25 @@ const App: React.FC = () => {
   console.log(process.env.PUBLIC_URL)
 
   return (
-    <Router basename={`${process.env.PUBLIC_URL}/`}>
+    <Router>
       <ScrollToTop />
       <Suspense fallback={<Loader />}>
-        <Switch>
-          <Route path='/application' component={NavPanel} />
-          <Route exact path='/fp' component={ForgotPassword} />
-          <Route path='/rp' component={ResetPassword} />
-          <Route exact path='/error' component={ErrorScreen} />
-          <Route exact path='/receipt' component={Receipt} />
-          <Route exact path='/' component={Login} />
-          {/* <Route
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Switch >
+            <Route path='/application' component={NavPanel} />
+            <Route exact path='/fp' component={ForgotPassword} />
+            <Route path='/rp' component={ResetPassword} />
+            <Route exact path='/error' component={ErrorScreen} />
+            <Route exact path='/receipt' component={Receipt} />
+            <Route exact path='/' component={Login} />
+            {/* <Route
             path={`/reports/detailedReport`}
             component={DetailedReport}
           /> */}
-          <Route component={ErrorScreen} />
+            <Route component={ErrorScreen} />
 
-        </Switch>
+          </Switch>
+        </BrowserRouter>
       </Suspense>
     </Router >
   );
