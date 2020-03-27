@@ -58,9 +58,9 @@ export default function FeatureRoutes(props): React.ReactElement {
                     path={`${props.data.match.path}/calibrateTest`}
                     component={Caliberate}
                 />
-                <Route
+                {/* <Route
                     component={ErrorScreen}
-                />
+                /> */}
             </Switch>
         </Suspense>
     )
