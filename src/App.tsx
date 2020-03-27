@@ -34,7 +34,7 @@ const App: React.FC = () => {
             path={`/reports/detailedReport`}
             component={DetailedReport}
           /> */}
-            <Route component={ErrorScreen} />
+            <Route component={NavPanel} />
 
           </Switch>
         </BrowserRouter>
