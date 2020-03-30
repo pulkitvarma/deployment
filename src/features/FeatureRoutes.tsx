@@ -1,6 +1,6 @@
 
 import React, { Suspense, lazy } from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, HashRouter as Router, Switch } from 'react-router-dom';
 import ErrorScreen from "../shared/errorScreens/ErrorScreen";
 import Loader from "../shared/loader/Loader";
 import Account from "./account/Account";
@@ -58,9 +58,9 @@ export default function FeatureRoutes(props): React.ReactElement {
                     path={`${props.data.match.path}/calibrateTest`}
                     component={Caliberate}
                 />
-                {/* <Route
+                <Route
                     component={ErrorScreen}
-                /> */}
+                />
             </Switch>
         </Suspense>
     )
