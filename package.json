@@ -11,7 +11,7 @@
     "enzyme-adapter-react-16": "^1.4.1",
     "html2canvas": "^1.0.0-rc.5",
     "jquery": "^3.4.1",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "node-sass": "^4.13.0",
     "react-app-polyfill": "^1.0.5",
     "react-chartjs-2": "^2.8.0",
